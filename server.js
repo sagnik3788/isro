@@ -7,7 +7,9 @@ const app = express();
 app.use(bodyParser.json());
 
 const cors = require('cors');
-app.use(cors());
+app.use(cors({
+  origin: ['https://isro-ui.netlify.app', 'http://localhost:3000']
+}));
 
 // Global flag to track GEE authentication status
 let geeAuthenticated = false;
