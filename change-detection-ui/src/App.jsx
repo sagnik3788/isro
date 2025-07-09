@@ -62,6 +62,10 @@ function App() {
     { value: 'mndwi', label: 'MNDWI (Water Index)' },
   ];
 
+  const API_BASE = import.meta.env.PROD
+    ? 'https://isro-fnij.onrender.com'
+    : '';
+
   const handleAnalyze = async () => {
     if (!aoi || !selectedOption) return;
     setLoading(true);
@@ -69,7 +73,7 @@ function App() {
     setResult(null);
     
     try {
-      const res = await fetch('/api/ndvi-timeseries', {
+      const res = await fetch(`${API_BASE}/api/ndvi-timeseries`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
