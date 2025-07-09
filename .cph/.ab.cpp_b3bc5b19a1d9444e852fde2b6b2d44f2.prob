@@ -1,1 +1,0 @@
-{"name":"Local: ab","url":"/home/sangnik/AI/ab.cpp","tests":[{"id":1751461586896,"input":"2\n62\n64\n10\n11","output":"7 \n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sangnik/AI/ab.cpp","group":"local","local":true}

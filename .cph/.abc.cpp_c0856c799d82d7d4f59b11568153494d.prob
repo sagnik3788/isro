@@ -1,1 +1,0 @@
-{"name":"Local: abc","url":"/home/sangnik/AI/abc.cpp","tests":[{"id":1751463702627,"input":"1\n4\n2\n2 1 3 4 \n1 2\n2 3\n2 4","output":"18"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sangnik/AI/abc.cpp","group":"local","local":true}
